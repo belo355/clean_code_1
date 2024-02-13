@@ -48,6 +48,7 @@ test.each([
   null, 
   "1111",
   "111111111", 
+  "11111111111", 
   "111111111111111111"
 ])("Nao deve criar uma conta se o cpf for invalido", async function (cpf: any) {
   const inputSignup = {
