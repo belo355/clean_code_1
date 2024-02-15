@@ -1,10 +1,13 @@
-Requisitos 
+Requisitos :
+  ```sh
+* nodejs 16+
+* typescript jest @types/jest ts-node ts-jes
+* npx tsc --init
+  ```
 
- - nodejs 16+ 
- - typescript jest @types/jest ts-node ts-jes
- - npx tsc --init
-
- - tsconfig.json
+Configs 
+  ```sh
+  tsconfig.json
     {
         "compilerOptions": {
         "incremental": true,
@@ -19,9 +22,10 @@ Requisitos
             "test"
         ]
     }
+  ```
 
-modelo de dados : 
-
+Modelo de dados : 
+  ```sh
 create table account (
   account_id uuid,
   name text,
@@ -56,7 +60,10 @@ create table position (
   long numeric,
   date timestamp
 );
+  ```
 
-- comando para execucao dos testes 
-
-  npx jest
+Execucao dos testes 
+  ```sh
+  npx jest --watchAll 
+  npx jest --watchAll --coverage
+  ```
